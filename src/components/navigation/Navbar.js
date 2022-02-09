@@ -14,23 +14,13 @@ export default function Navbar() {
     return (
         <NavStyled>
             {/* <img src={cloud} alt='cloud' className='cloud'/> */}
-            <h1 className='name'>Emily Parker | Web Developer</h1>
+            <a href='#' className='name'>Emily Parker | Web Developer</a>
             <LinkContainer>
-                <ul >
-                    <Link to='/about' className='nav-link'>About Emily</Link>                               
-                </ul>
-                <ul >
-                    <Link to='/experience' className='nav-link'>Experience</Link>                    
-                </ul>
-                <ul >
-                    <Link to='/maybe-projects' className='nav-link'>Projects</Link>                    
-                </ul>
-                <ul >
-                    <Link to='/education' className='nav-link'>Education</Link>                    
-                </ul>
-                <ul >
+                    <Link to='/about' className='nav-link'>About Emily</Link>                                                             
+                    <Link to='/experience' className='nav-link'>Experience</Link>                                                  
+                    <Link to='/maybe-projects' className='nav-link'>Projects</Link>                                                  
+                    <Link to='/education' className='nav-link'>Education</Link>                                                  
                     <Link to='/contact' className='nav-link'>Contact!</Link>                    
-                </ul>
             </LinkContainer>
         </NavStyled>
     )

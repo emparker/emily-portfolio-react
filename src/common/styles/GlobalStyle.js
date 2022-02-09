@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;		
         line-height: 1.75;
-        background: #f3f3f4ff;
+        background: #14110fff;
     }
 `
 

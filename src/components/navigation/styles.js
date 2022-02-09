@@ -2,13 +2,18 @@ import styled from 'styled-components'
 
 
 export const NavStyled = styled.header`
-    /* position: relative; */
+    position: absolute;
     display: flex;
     justify-content: space-between;
-    height: 10rem;
     align-items: center;
+    width: 90%;
+    height: 10rem;
     background-color: #14110fff;
     padding: 0 5rem 0 5rem;
+    top: 4rem;
+    /* left: 25%; */
+    border: 1px solid #f3f3f4ff;
+    border-radius: 50px;
 
     .cloud {
         position: absolute;
@@ -21,9 +26,23 @@ export const NavStyled = styled.header`
     .name {
         font-size: 3.2rem;
         color: #f3f3f4ff;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(
+            to right,
+            #d9c5b2ff,
+            #d9c5b2ff 50%,
+            #f3f3f4ff 50%);
+            background-size: 200% 100%;
+            background-position: 100%;
+    }
+    .name:hover {
+        transition: all 1s cubic-bezier(0.000, 0.000, 0.230, 1);
+        background-position: 0%;
     }
 `
-export const LinkContainer = styled.div`
+
+export const LinkContainer = styled.ul`
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
