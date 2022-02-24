@@ -10,19 +10,18 @@ export const NavStyled = styled.header`
     height: 10rem;
     background-color: #14110fff;
     padding: 0 5rem 0 5rem;
-    top: 4rem;
-    /* left: 25%; */
+    /* bottom: 4rem; */
     border: 1px solid #f3f3f4ff;
     border-radius: 50px;
 
-    .cloud {
+    /* .cloud {
         position: absolute;
         height: 50px;
         width: 50px;
         top: 300px;
         right: 300px;
         background-color: yellow;
-    }
+    } */
     .name {
         font-size: 3.2rem;
         color: #f3f3f4ff;
@@ -43,9 +42,10 @@ export const NavStyled = styled.header`
 `
 
 export const LinkContainer = styled.ul`
-    display: flex;
-    justify-content: flex-end;
     flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 2rem;
     width: 45rem;
 
@@ -57,6 +57,7 @@ export const LinkContainer = styled.ul`
     }
     .nav-link:hover {
         color: #d9c5b2ff;
+        cursor: pointer;
     }
 `
 

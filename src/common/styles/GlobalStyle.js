@@ -19,6 +19,8 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 400;		
         line-height: 1.75;
         background: #14110fff;
+        width: 100%;
+        /* text-align: center; */
     }
 `
 

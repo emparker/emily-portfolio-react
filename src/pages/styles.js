@@ -2,44 +2,54 @@ import styled from 'styled-components'
 
 export const LandingContainer = styled.div`
     display: flex;
+    flex-direction: column;
     position: relative;
-    justify-content: center;
-    background: #34312dff;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* background: #34312dff; */
     /* background: #d9c5b2ff; */
-    height: 575px;
-
-    
+    height: 100vh;    
     `
 
+export const FernContainer = styled.img`
+        /* position: absolute; */
+        height: 575px;
+        width: 100vw;
+        background: #34312dff;
+        object-fit: cover;
+        opacity: 0.4;
+        /* border-bottom: ${props => props.hover ? "inset -10px 0px 10px 40px #00ff00" : ''}; */
+`
+
 export const FirstSection = styled.section`
+    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
-    
     
     .emily {
         position: absolute;
         left: 6rem;
-        top: 27.5rem;
+        top: 20rem;
         object-fit: contain;
         height: 700px;
         width: auto;
         border: 1px solid #f3f3f4ff;
         border-radius: 15px;
         z-index: 1;
-        /* box-shadow: -1em -.8em 100px #7e7f83ff; */
-        /* margin-left: 8rem; */
     }
     .emily:hover {
-        box-shadow: -1em -.8em 500px #7e7f83ff;
+        box-shadow: -5em -5em 100px #7e7f8390;
+        box-shadow: 0em -5em 150px #6A9E5C40;
     }
 
     .emily-div {
-        position: absolute;
+        /* position: absolute; */
         background-color: #f3f3f4ff;
         left: 6rem;
         top: 275px;
-        height: 700px;
-        width: 100%;
+        height: 150px;
+        width: 150px;
         border-radius: 15px;
         z-index: -1
     }
@@ -65,7 +75,7 @@ export const FirstSection = styled.section`
         padding: 1rem;
     } */
 
-// `
+     /* ` */
 
 /* CSS HEX */
 // --smoky-black: #14110fff;
