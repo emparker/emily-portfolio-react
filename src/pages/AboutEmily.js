@@ -5,7 +5,7 @@ export default function AboutEmily() {
 
 
     return (
-        <div style={{height: '200px', width: '300px', backgroundColor: '#7e7f83ff'}}>
+        <div style={{height: '200px', width: '100vw', backgroundColor: '#F2D4D7'}}>
             <h1>Hellooo!</h1>
         </div>
     )

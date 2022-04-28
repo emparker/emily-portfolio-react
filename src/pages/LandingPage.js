@@ -33,28 +33,29 @@ export default function LandingPage () {
                 alt='ferns' 
                 hover={showMessage}
             />
-            <Navbar />
             <FirstSection>
-
+`
                 <div className='emily-div' >
-                    <h2>I want job.</h2>
+                    <a href='#' className='e-parker'>Emily Parker | Web Developer</a>
+                    <Navbar />
                 </div>
                 
                 <img src={emPic} 
-                    alt='emily' 
                     className='emily' 
+                    alt='emily' 
                     id='picture' 
                     onMouseOver={handleHover} 
                 /> 
                 
 
-            { showMessage && (
+            {/* { showMessage && (
                 <TextAnimation />
-                )}
+            )} */}
             </FirstSection>
+            <ProjectPage id='project-page'/>
                 {/* <h1 style={{backgroundColor:'yellow'}}>hey</h1> */}
             <AboutEmily id='about'/>
-            <ProjectPage id='project-page'/>
+            
             </LandingContainer>
         </>
     )

@@ -4,15 +4,17 @@ import styled from 'styled-components'
 export const NavStyled = styled.header`
     position: absolute;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
+    justify-content: flex-end;
+    /* align-items: center; */
+    /* z-index: 1; */
+    width: 50%;
     height: 10rem;
-    background-color: #14110fff;
+    /* background-color: #14110fff; */
     padding: 0 5rem 0 5rem;
     /* bottom: 4rem; */
-    border: 1px solid #f3f3f4ff;
-    border-radius: 50px;
+    border-bottom: 1px solid #f3f3f480;
+    /* border-radius: 50%; */
+    margin-top: 7rem;
 
     /* .cloud {
         position: absolute;
@@ -48,6 +50,7 @@ export const LinkContainer = styled.ul`
     justify-content: center;
     gap: 2rem;
     width: 45rem;
+    margin-top: 2rem;
 
     .nav-link {
         text-decoration: none;

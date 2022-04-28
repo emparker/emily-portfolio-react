@@ -8,7 +8,8 @@ export const LandingContainer = styled.div`
     /* justify-content: space-between; */
     /* background: #34312dff; */
     /* background: #d9c5b2ff; */
-    height: 100vh;    
+    /* height: 100vh;     */
+    /* height: 100vw; */
     `
 
 export const FernContainer = styled.img`
@@ -22,36 +23,66 @@ export const FernContainer = styled.img`
 `
 
 export const FirstSection = styled.section`
-    position: absolute;
-    position: relative;
+    /* position: absolute; */
+    /* position: relative; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+     align-items: center;
+    justify-content: center;
+    background-color: #4F794210;
+    /* height: 100vh; */
+    width: 100vw;
     
     .emily {
         position: absolute;
-        left: 6rem;
-        top: 20rem;
+        left: 30%;
+        top: 10rem;
         object-fit: contain;
-        height: 700px;
-        width: auto;
-        border: 1px solid #f3f3f4ff;
-        border-radius: 15px;
-        z-index: 1;
-    }
-    .emily:hover {
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        background-color: #202020;
         box-shadow: -5em -5em 100px #7e7f8390;
         box-shadow: 0em -5em 150px #6A9E5C40;
+        /* border: 1px solid #f3f3f480; */
+        /* border-radius: 45%; */
+        /* z-index: 1; */
     }
+    /* .emily:hover {
+        box-shadow: -5em -5em 100px #7e7f8390;
+        box-shadow: 0em -5em 150px #6A9E5C40;
+    } */
 
     .emily-div {
-        /* position: absolute; */
-        background-color: #f3f3f4ff;
-        left: 6rem;
-        top: 275px;
-        height: 150px;
-        width: 150px;
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 450px;
+        width: 100vw;
         border-radius: 15px;
-        z-index: -1
+        /* z-index: -1 */
+    }
+   
+    .e-parker {
+        /* color: white;
+        font-size: 4rem;  */
+        font-size: 3.2rem;
+        color: #f3f3f4ff;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(
+            to right,
+            #d9c5b2ff,
+            #d9c5b2ff 50%,
+            #f3f3f4ff 50%);
+            background-size: 200% 100%;
+            background-position: 100%;
+            :hover {
+                transition: all 1s cubic-bezier(0.000, 0.000, 0.230, 1);
+        background-position: 0%;
+            }
+            
     }
 `
 
