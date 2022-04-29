@@ -1,15 +1,10 @@
 import styled from 'styled-components'
 
 export const LandingContainer = styled.div`
+    position: relative;
     display: flex;
     flex-direction: column;
-    position: relative;
     align-items: center;
-    /* justify-content: space-between; */
-    /* background: #34312dff; */
-    /* background: #d9c5b2ff; */
-    /* height: 100vh;     */
-    /* height: 100vw; */
     `
 
 export const FernContainer = styled.img`
@@ -23,8 +18,6 @@ export const FernContainer = styled.img`
 `
 
 export const FirstSection = styled.section`
-    /* position: absolute; */
-    /* position: relative; */
     display: flex;
     flex-direction: row;
      align-items: center;
@@ -52,38 +45,24 @@ export const FirstSection = styled.section`
         box-shadow: -5em -5em 100px #7e7f8390;
         box-shadow: 0em -5em 150px #6A9E5C40;
     } */
-
-    .emily-div {
-        /* position: relative; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 450px;
-        width: 100vw;
-        border-radius: 15px;
-        /* z-index: -1 */
-    }
    
-    .e-parker {
-        /* color: white;
-        font-size: 4rem;  */
-        font-size: 3.2rem;
-        color: #f3f3f4ff;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-image: linear-gradient(
-            to right,
-            #d9c5b2ff,
-            #d9c5b2ff 50%,
-            #f3f3f4ff 50%);
-            background-size: 200% 100%;
-            background-position: 100%;
-            :hover {
-                transition: all 1s cubic-bezier(0.000, 0.000, 0.230, 1);
-        background-position: 0%;
-            }
-            
-    }
+`
+export const ProjContainer = styled.div`
+    position: relative;
+    width: 100vw; 
+    height: 100vh;
+    background-color: #ffffff; 
+    color:#013220;
+    
+`
+
+export const EmilyContainer = styled.div`
+    position: relative;
+    width: 100vw; 
+    height: 100vh;
+    background-color: #ffffff; 
+    color:#013220;
+
 `
 
 // export const MessageContainer = styled.div`

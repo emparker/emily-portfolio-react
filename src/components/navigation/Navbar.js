@@ -14,9 +14,7 @@ export default function Navbar() {
 
     return (
         <NavStyled>
-            {/* <img src={cloud} alt='cloud' className='cloud'/> */}
-            {/* <a href='#' className='name'>Emily Parker | Web Developer</a> */}
-            
+            <a href='#' className='e-parker'>Emily Parker | Web Developer</a>
             <LinkContainer>
                     <Link to='about' spy={true} smooth={true} className='nav-link'>About</Link>                                                             
                     <Link to='experience' spy={true} smooth={true} className='nav-link'>Experience</Link>                                                  

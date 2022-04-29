@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 //components
 import Navbar from '../components/navigation/Navbar'
 import TextAnimation from '../animations/TextAnimation'
-import AboutEmily from '../pages/AboutEmily'
+import EmilyPage from './EmilyPage'
 import ProjectPage from '../pages/ProjectPage'
 
 //images
@@ -33,28 +33,22 @@ export default function LandingPage () {
                 alt='ferns' 
                 hover={showMessage}
             />
-            <FirstSection>
-`
-                <div className='emily-div' >
-                    <a href='#' className='e-parker'>Emily Parker | Web Developer</a>
-                    <Navbar />
-                </div>
-                
+                <FirstSection>
+                <Navbar />
                 <img src={emPic} 
                     className='emily' 
                     alt='emily' 
                     id='picture' 
                     onMouseOver={handleHover} 
-                /> 
-                
+                />                
 
-            {/* { showMessage && (
-                <TextAnimation />
-            )} */}
-            </FirstSection>
-            <ProjectPage id='project-page'/>
-                {/* <h1 style={{backgroundColor:'yellow'}}>hey</h1> */}
-            <AboutEmily id='about'/>
+                {/* { showMessage && (
+                    <TextAnimation />
+                )} */}
+                </FirstSection>
+
+                <ProjectPage id='project-page'/>
+                <EmilyPage id='about'/>
             
             </LandingContainer>
         </>

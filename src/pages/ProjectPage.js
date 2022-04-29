@@ -1,12 +1,16 @@
 import React from 'react'
+//components
+import PageTab from '../components/PageTab'
+//styles
+import { ProjContainer } from './styles'
 
 
 export default function ProjectPage() {
 
     return (
-        <div style={{heght: '500px', width: '100vw', backgroundColor: 'yellow'}}>
-            <h1>Projects Page</h1>
-        </div>
+        <ProjContainer>
+            <PageTab />
+        </ProjContainer>
     )
 
 }

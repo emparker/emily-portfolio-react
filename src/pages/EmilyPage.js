@@ -1,13 +1,17 @@
 import React from 'react';
+//components
+import PageTab from '../components/PageTab';
+//styles
+import { EmilyContainer } from './styles'
 
 
-export default function AboutEmily() {
 
+export default function EmilyPage() {
 
     return (
-        <div style={{height: '200px', width: '100vw', backgroundColor: '#F2D4D7'}}>
-            <h1>Hellooo!</h1>
-        </div>
+        <EmilyContainer>
+            <PageTab /> 
+        </EmilyContainer>
     )
 }
 

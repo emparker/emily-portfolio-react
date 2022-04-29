@@ -20,8 +20,10 @@ export const GlobalStyle = createGlobalStyle`
         line-height: 1.75;
         background: #14110fff;
         width: 100%;
+        color: #013220;
         /* text-align: center; */
     }
+
 `
 
 /* CSS HEX */
