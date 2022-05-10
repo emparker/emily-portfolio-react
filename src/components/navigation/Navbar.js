@@ -1,31 +1,53 @@
-import React from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 // import { Link } from 'react-router-dom'
 import { Link } from 'react-scroll'
 
+//components
+import ContactPop from '../ContactPop'
 //images
-import cloud from '../../images/cloud-with-flat-base.svg'
+// import cloud from '../../images/cloud-with-flat-base.svg'
 
 // import styles
 import { NavStyled, LinkContainer } from './styles'
 
 
+const useContactPop = (ref) => {
+    useEffect(() => {
+        const handleClick = (e) => {
+            if (ref.current && !ref.current.contains(e.target)) {
+                // setShowContact(false)
+                console.log("HERE?", ref.current)
+            }
+        }
+        return (
+            handleClick
+        )
+       
+    },[ref])
+  
+}
 
-export default function Navbar() {
+export default function Navbar(props) {
+    const refWrap = useRef()
+    // useContactPop(refWrap)
+    console.log(refWrap)
+    const [ showContact, setShowContact ] = useState(false)
 
     return (
-        <NavStyled>
-            <a href='#' className='e-parker'>Emily Parker | Web Developer</a>
-            <LinkContainer>
-                    <Link to='about' spy={true} smooth={true} className='nav-link'>About</Link>                                                             
-                    <Link to='experience' spy={true} smooth={true} className='nav-link'>Experience</Link>                                                  
-                    <Link to='maybe-projects' spy={true} smooth={true} className='nav-link'>Projects</Link>                                                  
-                    <Link to='contact' spy={true} smooth={true} className='nav-link'>Contact!</Link>                    
-                    {/* <Link to='/about' className='nav-link'>About Emily</Link>                                                             
-                    <Link to='/experience' className='nav-link'>Experience</Link>                                                  
-                    <Link to='/maybe-projects' className='nav-link'>Projects</Link>                                                  
-                    <Link to='/contact' className='nav-link'>Contact!</Link>  */}
-            </LinkContainer>
-        </NavStyled>
+            <NavStyled>
+                <a href='#' className='e-parker'>Emily Parker | Web Developer</a>
+                <LinkContainer  ref={refWrap} >
+                        <li><Link activeClass="active" to='about' spy={true} smooth={true} className='nav-link'>About</Link></li>                                                             
+                        {/* <li><Link activeClass="active" to='experience' spy={true} smooth={true} className='nav-link'>Experience</Link></li>                                                 */}
+                        <li><Link activeClass="active" to='projects' spy={true} smooth={true} className='nav-link'>Projects</Link></li>                                               
+                        <li><Link onClick={(e) => setShowContact(!showContact)} className='nav-link'>Contact!</Link></li>
+                        {/* activeClass="active" to='contact' spy={true} smooth={true} */}
+                </LinkContainer>
+                <div ref={refWrap}>
+                    { showContact && <ContactPop /> }
+                </div>
+                <div className="blank-div"></div>
+            </NavStyled>       
     )
 }
             

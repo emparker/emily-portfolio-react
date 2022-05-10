@@ -15,6 +15,7 @@ import { LandingContainer, MessageContainer, FirstSection, FernContainer } from 
 
 export default function LandingPage () {
     const [ showMessage, setShowMessage ] = useState(false)
+    
 
 
     const handleHover = () => {
@@ -23,6 +24,7 @@ export default function LandingPage () {
             setShowMessage(false)
         }, 6500);
     }
+
 
 
     return (
@@ -35,20 +37,24 @@ export default function LandingPage () {
             />
                 <FirstSection>
                 <Navbar />
+                
                 <img src={emPic} 
                     className='emily' 
                     alt='emily' 
                     id='picture' 
                     onMouseOver={handleHover} 
-                />                
+                /> 
 
                 {/* { showMessage && (
                     <TextAnimation />
                 )} */}
                 </FirstSection>
+                
+                <div className='page-div' >
+                    <ProjectPage id='projects'/>
 
-                <ProjectPage id='project-page'/>
-                <EmilyPage id='about'/>
+                    <EmilyPage id='about'/>
+                </div>
             
             </LandingContainer>
         </>

@@ -9,7 +9,7 @@ import { EmilyContainer } from './styles'
 export default function EmilyPage() {
 
     return (
-        <EmilyContainer>
+        <EmilyContainer id="about">
             <PageTab /> 
         </EmilyContainer>
     )

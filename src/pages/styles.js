@@ -1,11 +1,21 @@
 import styled from 'styled-components'
 
 export const LandingContainer = styled.div`
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    `
+    height: 100vh;
+
+    .page-div {
+        padding: 100px;
+        background: -webkit-linear-gradient(to bottom, #55aa65, #ebff40);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #55aa65, #ebff40); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        /* background-image: linear-gradient( #ebff40, #3ac450); */
+        background-color: #55aa65;
+        height: 100vh;
+        width: 100vw;
+    }
+`
 
 export const FernContainer = styled.img`
         /* position: absolute; */
@@ -18,18 +28,14 @@ export const FernContainer = styled.img`
 `
 
 export const FirstSection = styled.section`
-    display: flex;
-    flex-direction: row;
-     align-items: center;
-    justify-content: center;
+    position: relative;
     background-color: #4F794210;
-    /* height: 100vh; */
+    height: 100vh;
     width: 100vw;
-    
     .emily {
         position: absolute;
-        left: 30%;
-        top: 10rem;
+        left: 35%;
+        top: -40rem;
         object-fit: contain;
         width: 600px;
         height: 600px;
@@ -49,8 +55,8 @@ export const FirstSection = styled.section`
 `
 export const ProjContainer = styled.div`
     position: relative;
-    width: 100vw; 
-    height: 100vh;
+    /* width: 100vw; 
+    height: 100vh; */
     background-color: #ffffff; 
     color:#013220;
     
@@ -58,8 +64,8 @@ export const ProjContainer = styled.div`
 
 export const EmilyContainer = styled.div`
     position: relative;
-    width: 100vw; 
-    height: 100vh;
+    /* width: 100vw; 
+    height: 100vh; */
     background-color: #ffffff; 
     color:#013220;
 

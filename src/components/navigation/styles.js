@@ -2,20 +2,24 @@ import styled from 'styled-components'
 
 
 export const NavStyled = styled.header`
-    /* position: absolute; */
     display: flex;
-    width: 100%;
+    width: 100vw;
     margin: auto;
-    padding: 0 5rem 0 5rem;
-    
-    margin-top: 7rem;
-    display: flex;
+    margin-top: 20rem;
+    padding: 5rem 5rem 0 5rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 450px;
-    width: 100vw;
     border-radius: 15px;
+    .blank-div {
+        height: 20rem;
+        width: 100vw;
+        margin-top: 15rem;
+        background: -webkit-linear-gradient(to bottom, #ebff40, #54ff59);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #ebff40, #54ff59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-image: linear-gradient( #ebff40, #4F794210);
+        background-color: #ebff40;
+    }
     /* .name {
         font-size: 3.2rem;
         color: #f3f3f4ff;
@@ -45,8 +49,8 @@ export const NavStyled = styled.header`
         -webkit-text-fill-color: transparent;
         background-image: linear-gradient(
             to right,
-            #d9c5b2ff,
-            #d9c5b2ff 50%,
+            #ebff40,
+            #ebff40 50%,
             #f3f3f4ff 50%);
             background-size: 200% 100%;
             background-position: 100%;
@@ -71,11 +75,13 @@ export const LinkContainer = styled.ul`
         text-decoration: none;
         font-size: 1.6rem;
         color: #f3f3f4ff;
-        
+        display: block;
     }
     .nav-link:hover {
-        color: #d9c5b2ff;
+        color: #55aa65;
         cursor: pointer;
+        transition: all .2s ease-in-out;
+        -webkit-transform: scale(1.2);
     }
 `
 /* CSS HEX */
