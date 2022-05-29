@@ -8,10 +8,10 @@ export const LandingContainer = styled.div`
 
     .page-div {
         padding: 100px;
-        background: -webkit-linear-gradient(to bottom, #55aa65, #ebff40);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to bottom, #55aa65, #ebff40); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        /* background: -webkit-linear-gradient(to bottom, #55aa65, #ebff40);
+        background: linear-gradient(to bottom, #55aa65, #ebff40); */
         /* background-image: linear-gradient( #ebff40, #3ac450); */
-        background-color: #55aa65;
+        background-color: #4F794210;
         height: 100vh;
         width: 100vw;
     }
@@ -34,15 +34,15 @@ export const FirstSection = styled.section`
     width: 100vw;
     .emily {
         position: absolute;
-        left: 35%;
-        top: -40rem;
+        left: 10%;
+        top: -36rem;
         object-fit: contain;
-        width: 600px;
-        height: 600px;
+        width: 300px;
+        height: 300px;
         border-radius: 50%;
         background-color: #202020;
-        box-shadow: -5em -5em 100px #7e7f8390;
-        box-shadow: 0em -5em 150px #6A9E5C40;
+        box-shadow: -8em 0 0 #687e82;
+        /* 6A9E5C40 */
         /* border: 1px solid #f3f3f480; */
         /* border-radius: 45%; */
         /* z-index: 1; */

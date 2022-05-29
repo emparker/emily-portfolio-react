@@ -5,7 +5,7 @@ export const NavStyled = styled.header`
     display: flex;
     width: 100vw;
     margin: auto;
-    margin-top: 20rem;
+    margin-top: 0rem;
     padding: 5rem 5rem 0 5rem;
     flex-direction: column;
     align-items: center;
@@ -15,10 +15,10 @@ export const NavStyled = styled.header`
         height: 20rem;
         width: 100vw;
         margin-top: 15rem;
-        background: -webkit-linear-gradient(to bottom, #ebff40, #54ff59);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to bottom, #ebff40, #54ff59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        background-image: linear-gradient( #ebff40, #4F794210);
-        background-color: #ebff40;
+        /* background: -webkit-linear-gradient(to bottom, #ebff40, #54ff59);
+        background: linear-gradient(to bottom, #ebff40, #54ff59); 
+        background-image: linear-gradient( #ebff40, #4F794210); */
+        background-color: #687e82;
     }
     /* .name {
         font-size: 3.2rem;
@@ -44,14 +44,14 @@ export const NavStyled = styled.header`
         /* color: white;
         font-size: 4rem;  */
         font-size: 3.2rem;
-        color: #f3f3f4ff;
+        color: #d59a4a;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-image: linear-gradient(
             to right,
             #ebff40,
             #ebff40 50%,
-            #f3f3f4ff 50%);
+            #d59a4a 50%);
             background-size: 200% 100%;
             background-position: 100%;
             :hover {
@@ -70,15 +70,15 @@ export const LinkContainer = styled.ul`
     width: 45rem;
     margin-top: 2rem;
     padding-left: 22rem;
+    list-style-type: none;
 
     .nav-link {
-        text-decoration: none;
         font-size: 1.6rem;
         color: #f3f3f4ff;
         display: block;
     }
     .nav-link:hover {
-        color: #55aa65;
+        color: #76cfcf;
         cursor: pointer;
         transition: all .2s ease-in-out;
         -webkit-transform: scale(1.2);
