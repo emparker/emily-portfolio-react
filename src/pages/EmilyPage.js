@@ -6,11 +6,11 @@ import { EmilyContainer } from './styles'
 
 
 
-export default function EmilyPage() {
+export default function EmilyPage({tabName}) {
 
     return (
         <EmilyContainer id="about">
-            <PageTab /> 
+            <PageTab tab={tabName}/> 
         </EmilyContainer>
     )
 }

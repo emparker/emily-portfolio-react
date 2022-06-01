@@ -43,14 +43,14 @@ export const NavStyled = styled.header`
         padding-left: 11rem;
         /* color: white;
         font-size: 4rem;  */
-        font-size: 3.2rem;
+        font-size: 6rem;
         color: #d59a4a;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-image: linear-gradient(
             to right,
-            #ebff40,
-            #ebff40 50%,
+            #76cfcf,
+            #76cfcf 50%,
             #d59a4a 50%);
             background-size: 200% 100%;
             background-position: 100%;

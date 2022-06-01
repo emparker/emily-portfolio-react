@@ -29,8 +29,6 @@ const useContactPop = (ref) => {
 
 export default function Navbar(props) {
     const refWrap = useRef()
-    // useContactPop(refWrap)
-    console.log(refWrap)
     const [ showContact, setShowContact ] = useState(false)
 
     return (
@@ -44,7 +42,7 @@ export default function Navbar(props) {
                         {/* activeClass="active" to='contact' spy={true} smooth={true} */}
                 </LinkContainer>
                 <div ref={refWrap}>
-                    { showContact && <ContactPop /> }
+                    { showContact && <ContactPop tabName="Contact"/> }
                 </div>
                 <div className="blank-div"></div>
             </NavStyled>       

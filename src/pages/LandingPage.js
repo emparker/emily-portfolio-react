@@ -51,9 +51,9 @@ export default function LandingPage () {
                 </FirstSection>
                 
                 <div className='page-div' >
-                    <ProjectPage id='projects'/>
+                    <ProjectPage id='projects' tabName="Projects"/>
 
-                    <EmilyPage id='about'/>
+                    <EmilyPage id='about' tabName="About"/>
                 </div>
             
             </LandingContainer>

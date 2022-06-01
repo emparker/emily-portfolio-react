@@ -31,15 +31,14 @@ export const PageTabContainer = styled.div`
     }
 `
 
-export default function PageTab() {
-    // console.log({tabName})
-
+export default function PageTab(props) {
+    console.log("the pageTab:", props.tab)
 
     return (
 
         <PageTabContainer>
-                <div class="arrow-right"/>
-                <h1 class="projects-txt">Projects</h1>
+                <div className="arrow-right"/>
+                <h1 className="projects-txt">{props.tab}</h1>
         </PageTabContainer>
     )
 }

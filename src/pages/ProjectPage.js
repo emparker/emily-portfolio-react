@@ -5,12 +5,11 @@ import PageTab from '../components/PageTab'
 import { ProjContainer } from './styles'
 
 
-export default function ProjectPage({id}) {
-    console.log(id)
+export default function ProjectPage({tabName}) {
 
     return (
         <ProjContainer id="projects" >
-            <PageTab tabName={id}/>
+            <PageTab tab={tabName}/>
         </ProjContainer>
     )
 
